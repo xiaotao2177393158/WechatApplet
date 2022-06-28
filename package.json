@@ -1,0 +1,23 @@
+{
+  "name": "uni_project",
+  "version": "1.0.0",
+  "description": "uni-app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaotao2177393158/WechatApplet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaotao2177393158/WechatApplet/issues"
+  },
+  "homepage": "https://github.com/xiaotao2177393158/WechatApplet#readme",
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1"
+  }
+}
