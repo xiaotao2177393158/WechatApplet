@@ -9,7 +9,7 @@ import { $http } from '@escook/request-miniprogram'
 uni.$http = $http
 
 // 配置请求根路径
-$http.baseUrl = 'https://www.uinav.com'
+$http.baseUrl = 'http://www.uinav.com'
 
 // 请求拦截器
 $http.beforeRequest = function(options) {
@@ -21,7 +21,7 @@ $http.beforeRequest = function(options) {
 // 响应拦截器
 $http.afterRequest = function() {
 	uni.hideLoading()
-}
+} 
 
 // 封装的展示消息提示的方法
 uni.$showMsg = function (title = '数据加载失败！', duration = 1500) {
