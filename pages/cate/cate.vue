@@ -7,7 +7,8 @@
 			<scroll-view class="left-scroll-view" scroll-y :style="{height: wh + 'px'}">
 				<block v-for="(item, i) in cateList" :key="i">
 					<view :class="['left-scroll-view-item', i === active ? 'active' : '']" @click="activeChanged(i)">
-						{{item.cat_name}}</view>
+						{{item.cat_name}}
+					</view>
 				</block>
 			</scroll-view>
 			<!-- 右侧的滚动视图区域 -->
@@ -32,7 +33,9 @@
 </template>
 
 <script>
+	import badgeMix from '@/mixins/tabbar-badge.js'
 	export default {
+		mixins: [badgeMix],
 		data() {
 			return {
 				// 窗口的可用高度 = 屏幕高度 - navigationBar高度 - tabBar 高度
